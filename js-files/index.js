@@ -109,6 +109,7 @@
         siteURL.classList.remove('is-valid', 'is-invalid');
         siteName.nextElementSibling.classList.replace('d-block', 'd-none');
         siteURL.nextElementSibling.classList.replace('d-block', 'd-none');
+        document.getElementById('addBtn').innerHTML = 'Submit';
     }
     // ===========================CLEAR===========================
 
@@ -143,6 +144,11 @@
         displaysites(siteContainer);
         // ===========================DELETE EFFECT ON LOCAL STORAGE==to make effect at refresh=======================================
         localStorage.setItem('Bookmark_site', JSON.stringify(siteContainer));
+        //-----------------
+        clearForm();
+        document.getElementById('addBtn').innerHTML = 'Submit';
+
+        //--------------------
     }
     // ===========================DELETE Item=========================================
 
