@@ -37,7 +37,7 @@
 
     // ===========================ADD NEW Sites==========================
     form.addEventListener('submit', function(e) {
-        e.preventDefault;
+        e.preventDefault();
         addSite();
     });
 
