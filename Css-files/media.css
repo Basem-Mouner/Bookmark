@@ -1,0 +1,27 @@
+/* sm*/
+
+@media(min-width:400px) {
+    .card-alert {
+        margin: 10px;
+    }
+}
+
+
+/* md */
+
+@media(min-width:768px) {
+    .card-alert {
+        width: 600px;
+        height: 300px;
+    }
+}
+
+
+/* lg */
+
+@media(min-width:1024px) {}
+
+
+/* xl */
+
+@media(min-width:1280px) {}

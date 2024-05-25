@@ -1,0 +1,99 @@
+:root {
+    --main-transtion-tima: .4s;
+}
+
+*::selection {
+    background-color: #fec260;
+    color: black;
+}
+
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #f7ecde;
+}
+
+h1 {
+    width: 250px;
+    font-family: "Pacifico", cursive;
+}
+
+.main-log h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    left: 0;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all var(--main-transtion-tima);
+}
+
+.main-log h1:hover::before {
+    height: 70%;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(90deg, rgb(63, 165, 92), rgb(178, 172, 74));
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    width: 400px;
+}
+
+.favoritsite {
+    border: 2px dotted black;
+    border-left: 0;
+    border-right: 0;
+}
+
+h3 input {
+    border: 1px solid red;
+}
+
+h3 input:focus {
+    border: 2px solid rgb(255, 49, 87);
+    box-shadow: 0 0 5px rgb(255, 0, 30);
+}
+
+.form-control:focus {
+    border: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+
+#addBtn {
+    background-color: rgb(213, 88, 53);
+}
+
+#addBtn:hover {
+    background-color: rgb(187, 65, 32);
+    box-shadow: 0 0 10px #845406;
+    transform: scale(1.01);
+    letter-spacing: 5px;
+    font-weight: 600;
+    transition: all var(--main-transtion-tima) ease-in-out;
+}
+
+tr {
+    border: 1px solid rgb(169, 165, 165);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+td,
+th {
+    padding: 6px;
+}
+
+
+/* layout alert layer */
+
+.alert-layout {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*  */

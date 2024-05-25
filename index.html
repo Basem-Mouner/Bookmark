@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>BookMark</title>
+    <!--  -->
+    <link rel="icon" href="assests/images/bookmark.png">
+    <!-- all CSS hear -->
+    <!--Bootstrap  -->
+    <link rel="stylesheet" href="Css-files/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="Css-files/all.min.css">
+    <!--media quary  -->
+    <link rel="stylesheet" href="Css-files/media.css">
+    <!--main style sheet  -->
+    <link rel="stylesheet" href="Css-files/main.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="web designer,developer web">
+</head>
+
+<body class="">
+    <header></header>
+    <main>
+        <section class="main-log container-sm   mt-5  p-3 ">
+            <h1 class="text-center text-black fa-3x fw-bold  m-auto  position-relative ">Bookmarker</h1>
+            <div class="favoritsite   my-5 py-4 ">
+                <h2 class=" m-auto text-center mb-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="SiteName" class="form-label fw-bolder"><i class="fa-solid fa-book-bookmark mx-2"></i>Site Name</label>
+                        <input type="text" class="form-control form-custum" id="SiteName" placeholder="Bookmark Name ..at least 3 characters">
+                        <div class="alert bg-danger bg-opacity-50 p-1 mt-2 d-none">
+                            <small>insert this formatting Site name must contain at least 3 characters or number only</small>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="SiteURL" class="form-label fw-bolder"><i class="fa-solid fa-link mx-2"></i>Site URL</label>
+                        <input type="text" class="form-control" id="SiteURL" placeholder="Website URL   as ....  https://(name).com">
+                        <div class="alert bg-danger bg-opacity-50 p-1 mt-2 d-none">
+                            <small> insert this formatting url https://(name).com </small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="submit" id='addBtn' class="btn px-5 py-2 mt-4">Submit</button>
+                    </div>
+                </form>
+                <div class="text-center m-4">
+                    <button class="reset_button btn btn-outline-danger px-5 py-2 ">Reset</button>
+                </div>
+            </div>
+            <h3 class="w-100 bg-white text-center p-3 m-0 text-capitalize fw-bolder d-flex justify-content-around">
+                <span class="">your favorite sites</span>
+                <input type="text" class="p-2 h6 rounded-4 ms-3" id="SearchSite" placeholder="Search">
+            </h3>
+            <table class="w-100 bg-white text-center ">
+
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="demo">
+                    <!-- here box container loaded by js -->
+                </tbody>
+            </table>
+
+        </section>
+        <section class="alert-layout  position-fixed top-0 start-0 end-0 bottom-0 d-none justify-content-center align-items-center ">
+            <div class="card-alert   bg-white  rounded-3 p-4">
+                <div class="icon-tag d-flex justify-content-between mt-3">
+                    <div class="circle-tag">
+                        <i class="fa-solid fa-circle fs-5" style="color: #f15f5d;"></i>
+                        <i class="fa-solid fa-circle fs-5" style="color: #febe2e;"></i>
+                        <i class="fa-solid fa-circle fs-5" style="color: #4db749;"></i>
+                    </div>
+                    <i id="CLOSE" class=" fa-solid fa-xmark fs-4 "></i>
+                </div>
+                <p class="mt-4 fs-4 fw-bold">
+                    Site Name or Url is not valid, Please follow the rules below :
+                </p>
+                <ol class="list-unstyled ">
+                    <li class="p-2 fs-5"><i class="fa-regular fa-circle-right  me-3 " style="color: #bb4120;"></i>Site name must contain at least 3 characters</li>
+                    <li class="p-2 fs-5"><i class="fa-regular fa-circle-right  me-3" style="color: #bb4120;"></i>Site URL must be a valid one</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer></footer>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <!-- js part -->
+    <script src="js-files/index.js ">
+    </script>
+    <script src="js-files/bs/bootstrap.bundle.js ">
+    </script>
+
+</body>
+
+</html>
+
+</html>
