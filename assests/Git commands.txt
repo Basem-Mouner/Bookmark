@@ -1,0 +1,30 @@
+/***********البدايه*****************/
+git init
+git config --global user.name "3bmo3ty"
+git config --global user.email "xxxxx@gmail.com"
+git remote add origin https://github.com/xxxx/xxxxx.git
+git add .
+git commit -m "initial commit"
+git log
+git push origin master
+/*************لما اجي اعمل تعديل***********/
+git add .
+git commit -m "sec commit"
+git log
+git push origin master
+/************عشان اعمل clone******احمل المشروع بتاع حد عندي عشان اعدل علية واعملة بوش بعد ما اخلص********
+git clone https://github.com/xxxxx/xxxxx
+/**********pull***عشان اجي كل التحديثات اللي غيري عاملها********/
+git pull origin master
+/***عشان امسح اخر تعديل متعهملهوش commit****/
+git reset --hard
+/*****عشان اجيب ال branch اللي نا فيه*******/
+git branch
+/****عشان اغير ال branch******/
+git checkout -b newbranch
+
+تعلم git & github في 25 دقيقة !! - الجزء الأول
+https://www.youtube.com/watch?v=2QP4QxzG-wY&ab_channel=AhmedHekal
+
+تعلم git & github في 25 دقيقة !! - الجزء الثاني
+https://www.youtube.com/watch?v=5co5C3jmTWI&t=177s&ab_channel=AhmedHekal
